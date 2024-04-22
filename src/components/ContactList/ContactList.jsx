@@ -1,17 +1,18 @@
-import {selectFilteredContactsMemo} from "../../redux/contactsSlice"
-import css from "./ContactList.module.css"
-import { useSelector } from "react-redux"
-import Contact from "../Contact/Contact"
+import { selectFilteredContactsMemo } from "../../redux/contacts/selectors";
+import Contact from "../Contact/Contact";
+import css from "./ContactList.module.css";
+import { useSelector } from "react-redux";
 
-function ContactList(){
+function ContactList({ isOpen }) {
+  const filteredContacts = useSelector(selectFilteredContactsMemo);
 
-    const filteredContacts = useSelector(selectFilteredContactsMemo)
-
-    return (
-        <ul className={css.list}>
-            {filteredContacts.map(el => <Contact key={el.id} {...el}/>)}
-        </ul>
-    )
+  return (
+    <ul className={css.list}>
+      {filteredContacts.map((el) => (
+        <Contact isOpen={isOpen} key={el.id} {...el} />
+      ))}
+    </ul>
+  );
 }
 
-export default ContactList
+export default ContactList;

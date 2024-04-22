@@ -6,7 +6,6 @@
   background-color: #d31a1a;
   border-radius: 12px;
   padding: 10px;
-  height: 80px;
 }
 
 .contacts {
@@ -18,6 +17,7 @@
   text-transform: capitalize;
   color: white;
   font-size: 22px;
+  margin-right: auto;
 }
 
 .btn {
@@ -27,11 +27,15 @@
   height: 40px;
   align-items: center;
   text-transform: uppercase;
-  background-color: #d31a1a;
+  background-color: darkorange;
 }
 
 .span {
   display: flex;
   gap: 5px;
   align-items: baseline;
+}
+
+.delete {
+  background-color: red;
 }

@@ -1,0 +1,15 @@
+.phonebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #d31a1a;
+  padding: 0px;
+  border-radius: 12px;
+  width: 300px;
+  margin: 0;
+  color: white;
+  font-size: 46px;
+  font-weight: 900;
+  height: 60px;
+}

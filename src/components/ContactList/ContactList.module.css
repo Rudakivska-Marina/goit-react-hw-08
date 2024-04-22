@@ -1,11 +1,12 @@
 .list {
+  margin: 0 10px 0;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
   padding: 0;
-  position: absolute;
-  top: 450px;
+  left: 350px;
   flex-wrap: wrap;
-  margin: 0;
+  height: 80vh;
+  width: 100vh;
 }

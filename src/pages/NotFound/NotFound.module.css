@@ -1,0 +1,23 @@
+.NotFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 52px;
+  font-weight: 500;
+  color: #d31a1a;
+}
+
+.link {
+  background-color: darkorange;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.link:hover {
+  color: white;
+}
